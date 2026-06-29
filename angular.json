@@ -41,10 +41,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": {
-              "base": "dist/esencia-psicologia",
-              "browser": ""
-            },
+            "outputPath": "dist/esencia-psicologia",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -60,7 +57,9 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "prerender": false,
+            "ssr": false
           },
           "configurations": {
             "production": {
