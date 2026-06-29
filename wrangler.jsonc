@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "esenciapsicologos1",
+  "compatibility_date": "2026-06-29",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "dist/esencia-psicologia/browser"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
