@@ -1,0 +1,51 @@
+<nav [style.padding]="navCompact ? '.9rem 5vw' : '1.4rem 5vw'">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/LOGO-SIN-FONDO.png" alt="ESENCIA logo" style="height:48px;width:auto;display:inline-block;vertical-align:middle;" />
+    <span class="nav-logo-word">ESENCIA</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#about">Nuestro Equipo</a></li>
+    <li class="nav-dropdown">
+      <a href="#services">Servicios ▾</a>
+      <ul class="nav-submenu">
+        <li><a href="#services" (click)="activateSvc('svc1')">Terapia Individual</a></li>
+        <li><a href="#services" (click)="activateSvc('svc2')">Terapia de Pareja</a></li>
+        <li><a href="#services" (click)="activateSvc('svc3')">Terapia Familiar</a></li>
+        <li><a href="#services" (click)="activateSvc('svc4')">EMDR &amp; Trauma</a></li>
+        <li><a href="#services" (click)="activateSvc('svc5')">Psicoterapia con Menores</a></li>
+        <li><a href="#services" (click)="activateSvc('svc6')">Proceso de Duelo</a></li>
+      </ul>
+    </li>
+    <li><a href="#approach">Enfoque</a></li>
+    <li><a href="#formation">Formación</a></li>
+    <li><a href="#reviews">Reseñas</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Primera consulta</a>
+  <button class="nav-burger" [class.open]="mobileOpen" (click)="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile-bg" [class.open]="mobileOpen" (click)="toggleMenu()"></div>
+<div class="nav-mobile" [class.open]="mobileOpen">
+  <ul class="nav-mobile-links">
+    <li><a href="#hero" (click)="toggleMenu()">Inicio</a></li>
+    <li><a href="#about" (click)="toggleMenu()">Nuestro Equipo</a></li>
+    <li class="nav-mobile-group" [class.sub-open]="mobileSubOpen">
+      <button class="nav-mobile-label" (click)="toggleMobileSub()">Servicios <span class="nav-mobile-arrow">&#8250;</span></button>
+      <ul class="nav-mobile-sub">
+        <li><a href="#services" (click)="activateSvc('svc1');toggleMenu()">Terapia Individual</a></li>
+        <li><a href="#services" (click)="activateSvc('svc2');toggleMenu()">Terapia de Pareja</a></li>
+        <li><a href="#services" (click)="activateSvc('svc3');toggleMenu()">Terapia Familiar</a></li>
+        <li><a href="#services" (click)="activateSvc('svc4');toggleMenu()">EMDR &amp; Trauma</a></li>
+        <li><a href="#services" (click)="activateSvc('svc5');toggleMenu()">Psicoterapia con Menores</a></li>
+        <li><a href="#services" (click)="activateSvc('svc6');toggleMenu()">Proceso de Duelo</a></li>
+      </ul>
+    </li>
+    <li><a href="#approach" (click)="toggleMenu()">Enfoque</a></li>
+    <li><a href="#formation" (click)="toggleMenu()">Formación</a></li>
+    <li><a href="#reviews" (click)="toggleMenu()">Reseñas</a></li>
+    <li><a href="#contact" (click)="toggleMenu()" class="nav-mobile-cta">Primera consulta</a></li>
+  </ul>
+</div>

@@ -1,0 +1,251 @@
+<section id="services">
+  <div class="reveal">
+    <p class="section-eyebrow">Nuestros servicios</p>
+    <h2 class="section-title">Un espacio para <em>cada</em> necesidad</h2>
+    <p class="section-lead">Desde la primera sesión sentirás cercanía, amabilidad y respeto profesional. Selecciona el servicio para conocer más.</p>
+  </div>
+
+  <div class="svc-tabs reveal">
+    <button class="svc-tab active" (click)="showSvc($event, 'svc1')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span class="tab-label">Terapia Individual</span>
+    </button>
+    <button class="svc-tab" (click)="showSvc($event, 'svc2')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l7.78 7.78 7.78-7.78a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span class="tab-label">Terapia de Pareja</span>
+    </button>
+    <button class="svc-tab" (click)="showSvc($event, 'svc3')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span class="tab-label">Terapia Familiar</span>
+    </button>
+    <button class="svc-tab" (click)="showSvc($event, 'svc4')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      <span class="tab-label">EMDR &amp; Trauma</span>
+    </button>
+    <button class="svc-tab" (click)="showSvc($event, 'svc5')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><path d="M6 20v-2a6 6 0 0 1 9-5.66"/><polyline points="17 21 19 23 23 18"/></svg>
+      <span class="tab-label">Psicoterapia con Menores</span>
+    </button>
+    <button class="svc-tab" (click)="showSvc($event, 'svc6')">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+      <span class="tab-label">Proceso de Duelo</span>
+    </button>
+  </div>
+
+  <!-- PANEL 1: Terapia Individual -->
+  <div class="svc-panel active" id="svc1">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>Terapia individual</em></h3>
+      <p class="svc-intro">En Esencia, la terapia individual te brinda un espacio de apoyo, estabilidad y calma. En este entorno seguro encontrarás escucha activa, aceptación incondicional, calidez y un profundo respeto por tu historia, tus conductas y tus emociones.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Gestión Emocional y Bienestar Personal</p>
+        <p><strong>Estado de ánimo:</strong> Ansiedad, estrés continuado, miedos o tristeza profunda.</p>
+        <p><strong>Desregulación emocional:</strong> Dificultad para gestionar el enfado, la frustración, la agresividad o los impulsos.</p>
+        <p><strong>Desconexión emocional:</strong> Sensación de bloqueo interno o apatía.</p>
+        <p><strong>Autoconcepto:</strong> Problemas de autoestima e inseguridad.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Vínculos, Relaciones y Heridas de Apego</p>
+        <p><strong>Dificultades interpersonales:</strong> Conflictos en las relaciones con los demás o en la relación contigo mismo/a.</p>
+        <p><strong>Dependencia emocional:</strong> Patrones de apego que generan sufrimiento.</p>
+        <p><strong>Heridas emocionales:</strong> Sensación constante de abandono, rechazo, humillación o culpa.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Trauma y Tránsito de Pérdidas</p>
+        <p><strong>Trauma:</strong> Procesamiento de experiencias adversas (abuso sexual, maltrato, trauma relacional…).</p>
+        <p><strong>Duelo y pérdidas:</strong> Acompañamiento en la gestión del vacío, la negación o el enfado tras una pérdida significativa.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Conducta, Hábitos y Autocontrol</p>
+        <p><strong>Trastornos de la Conducta Alimentaria (TCA):</strong> Acompañamiento en la relación con la comida y la imagen corporal.</p>
+        <p><strong>Adicciones:</strong> Abordaje terapéutico de conductas adictivas y dependencia a sustancias.</p>
+      </div>
+    </div>
+    <p class="svc-areas-title"><em>Nuestro proceso terapéutico</em></p>
+    <div class="svc-process">
+      <div class="svc-process-step"><span class="svc-step-num">01</span><h4>Exploramos el pasado</h4><p>Te acompañamos en la revisión y el procesamiento de tus vivencias significativas durante la infancia, la adolescencia y las primeras etapas del desarrollo. A través de la reconstrucción de tu historia de vida, analizaremos el impacto de las dinámicas familiares y sociales para que logres identificar y hacer conscientes aquellos patrones relacionales y emocionales que has ido adquiriendo a lo largo del tiempo.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">02</span><h4>Comprendemos el presente</h4><p>Identificamos las conductas que a día de hoy provocan malestar. El objetivo es conocernos y desarrollar estrategias de regulación emocional y de afrontamiento más adaptativas, que te permitan transitar y gestionar las situaciones difíciles desde una perspectiva más saludable.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">03</span><h4>Construimos el futuro</h4><p>Trabajamos para que integres lo aprendido en tu día a día. Buscamos que recuperes la confianza en ti mismo/a, que te relacionas de una forma más sana y satisfactoria y que te sientas preparado/a para afrontar los retos vitales con mayor seguridad y bienestar.</p></div>
+    </div>
+  </div>
+
+  <!-- PANEL 2: Terapia de Pareja -->
+  <div class="svc-panel" id="svc2">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>Terapia de pareja</em></h3>
+      <p class="svc-intro">Sabemos que dar el paso de venir a terapia de pareja no siempre es fácil. Aquí os ofrecemos un refugio seguro, neutral y libre de juicios donde ambos podáis sentiros escuchados y validados. Entendemos que las relaciones están vivas y atraviesan crisis, bloqueos y transiciones. Nuestro objetivo no es hacer de jueces ni buscar culpables, sino acompañaros con calidez para entender vuestra historia, sanar lo que duela y ayudaros a construir una forma de relacionaros mucho más sana, amorosa y satisfactoria.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Comunicación y Entendimiento</p>
+        <p><strong>Dificultades para comunicarnos:</strong> Sentir que "hablamos idiomas distintos", que no nos entendemos o que cualquier tema acaba en discusión.</p>
+        <p><strong>Patrones de conflicto:</strong> Círculos viciosos de luchas de poder, círculos en los que uno persigue y el otro se aleja, uso de reproches, o silencios que duelen.</p>
+        <p><strong>Sentimiento de soledad:</strong> Esa sensación de no sentirse escuchado, valorado o tenido en cuenta por el otro, a pesar de estar juntos.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Crisis y Heridas en la Relación</p>
+        <p><strong>Pérdida de confianza:</strong> Acompañamiento y reparación ante infidelidades, mentiras o grandes decepciones.</p>
+        <p><strong>Resentimiento acumulado:</strong> Ayuda para sanar aquellas heridas o discusiones del pasado que no se cerraron bien y siguen pesando en el presente.</p>
+        <p><strong>Dudas sobre el futuro:</strong> Momentos de encrucijada donde necesitáis claridad para apostar por la relación, o bien apoyo para transitar hacia una separación consciente, madura y respetuosa.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Convivencia y Proyecto de Vida</p>
+        <p><strong>Desacuerdos en la crianza:</strong> Diferencias a la hora de educar a los hijos, gestionar los límites o hacer equipo como padres.</p>
+        <p><strong>Desgaste en la convivencia:</strong> Conflictos por el día a día, carga mental desequilibrada, estrés externo o intromisión de las familias de origen.</p>
+        <p><strong>Transiciones vitales:</strong> Dificultad para adaptaros a los cambios (el nacimiento del primer bebé, un cambio laboral fuerte, el "nido vacío" o una mudanza).</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Conexión Afectiva y Sexualidad</p>
+        <p><strong>Distanciamiento emocional:</strong> Sentir que os habéis convertido en "compañeros de piso" y que la complicidad, las risas o la chispa se han apagado.</p>
+        <p><strong>Desconexión íntima:</strong> Diferencias en el nivel de deseo sexual, monotonía, falta de tiempo para vosotros o dificultades en los encuentros íntimos.</p>
+        <p><strong>Expresión del afecto:</strong> Dificultad para demostrar, pedir o recibir cariño de la forma en que cada uno lo necesita para sentirse amado.</p>
+      </div>
+    </div>
+    <p class="svc-areas-title"><em>Nuestro enfoque: De la guerra, a ser refugio mutuo</em></p>
+    <div class="svc-process">
+      <div class="svc-process-step"><span class="svc-step-num">01</span><h4>Asumimos nuestra parte</h4><p>Para iniciar la solución, fomentamos un espacio de honestidad donde cada uno pueda reconocer —con amabilidad, pero con espíritu crítico— qué conductas, reacciones o mecanismos de defensa propios están alimentando el distanciamiento actual. Se trata de entender cómo la mochila de cada uno ha llevado la relación al punto de incomprensión en el que se encuentra.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">02</span><h4>Comprendemos nuestra historia</h4><p>Como terapeutas, os ayudamos a elaborar vuestra historia personal de forma individual, pero en presencia del otro. Exploramos cómo fue vuestra familia de origen y cómo aprendisteis a vincularos y a interactuar desde pequeños. Al ponerle voz a estas vivencias y entender de dónde venimos, el proceso terapéutico da un giro radical.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">03</span><h4>El cambio: de oponentes a compañeros</h4><p>Cuando escuchas las situaciones vulnerables o dolorosas que ha vivido tu pareja, ocurre algo transformador. Las barreras caen. Tu pareja deja de ser ese "oponente" al que hay que ganar en una discusión, para volver a ser una persona a la que mirar con respeto, compasión y empatía. Al hacer este proceso de forma bidireccional, dejáis de estar en guerra; las defensas se desactivan y volvéis a ser ese equipo que se entiende, se sostiene y se ayuda mutuamente.</p></div>
+    </div>
+  </div>
+
+  <!-- PANEL 3: Terapia Familiar -->
+  <div class="svc-panel" id="svc3">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>Terapia familiar</em></h3>
+      <p class="svc-intro">Un espacio para que cada voz sea escuchada y cada vínculo sea sanado. Porque la familia no es solo un grupo de personas, es el sistema donde crecemos y nos sostenemos. En Esencia, entendemos que nadie es una isla y que el dolor que siente uno de los miembros suele ser el reflejo de una dinámica que afecta a todos. No buscamos "arreglar" a una persona ni señalar culpables, sino transformar la forma en que os relacionáis para que el hogar vuelva a ser un refugio de calma y seguridad.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Comunicación y Convivencia</p>
+        <p><strong>Tensiones diarias:</strong> Abordamos los conflictos cotidianos, los gritos que no dejan paso a la escucha o los silencios prolongados que duelen.</p>
+        <p><strong>Del conflicto al diálogo:</strong> Os ayudamos a transformar las discusiones destructivas en conversaciones donde todos se sientan respetados y tenidos en cuenta.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Ciclos Vitales y Cambios</p>
+        <p><strong>Etapas de transición:</strong> Acompañamiento en momentos clave que desestabilizan el sistema, como la crianza, la etapa adolescente o el "nido vacío" cuando los hijos se independizan.</p>
+        <p><strong>Nuevas estructuras:</strong> Apoyo en la adaptación a familias reconstituidas o en el cuidado y la relación con nuestros mayores.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Crisis y Heridas Familiares</p>
+        <p><strong>Sucesos dolorosos:</strong> Procesamiento de separaciones, divorcios conflictivos o traumas que han impactado profundamente en el corazón del grupo familiar.</p>
+        <p><strong>Duelos compartidos:</strong> Acompañamiento en la pérdida de un ser querido, permitiendo que cada miembro transite su dolor a su ritmo sin desconectarse de los demás.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">El Síntoma como Mensaje</p>
+        <p><strong>El malestar individual:</strong> Apoyo cuando uno de los integrantes de la familia sufre (Trastornos de la Conducta Alimentaria, problemas de conducta, depresión o adicciones).</p>
+        <p><strong>Sanar el entorno:</strong> Entendemos que modificar la dinámica de la familia al completo es la herramienta más poderosa para impulsar y sostener la recuperación del miembro que está sufriendo.</p>
+      </div>
+    </div>
+    <p class="svc-areas-title"><em>Nuestro enfoque: Sanar juntos</em></p>
+    <div class="svc-process svc-process--4">
+      <div class="svc-process-step"><span class="svc-step-num">01</span><h4>Escuchamos todas las voces</h4><p>Creamos un espacio seguro, neutral y libre de juicios donde cada miembro de la familia pueda expresar su sentir y su perspectiva de la historia sin miedo a ser invalidado.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">02</span><h4>Identificamos los nudos</h4><p>Analizamos las reglas no escritas, las alianzas y los patrones de comportamiento que están bloqueando la armonía familiar. Hacemos consciente lo inconsciente para entender cómo habéis llegado al punto actual de tensión.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">03</span><h4>Reparamos el vínculo</h4><p>Ayudamos a que cada miembro de la familia pueda ver el dolor o la necesidad que se esconde detrás de las conductas defensivas del otro, despertando la compasión y desactivando la necesidad de atacarse.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">04</span><h4>Transformamos la dinámica</h4><p>Construimos nuevas formas de convivir, estableciendo límites sanos y claros, y fomentando una comunicación honesta. El objetivo final es que la familia deje de funcionar como bandos enfrentados y vuelva a ser un equipo que se protege mutuamente.</p></div>
+    </div>
+  </div>
+
+  <!-- PANEL 4: EMDR & Trauma -->
+  <div class="svc-panel" id="svc4">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>EMDR y Trauma</em></h3>
+      <p class="svc-intro">Un espacio seguro para sanar las heridas del pasado que siguen doliendo en el presente. El trauma no es solo lo que nos pasó, sino lo que se quedó atrapado en nuestro cuerpo y nuestra mente como consecuencia de ello. A menudo, intentamos superar el trauma simplemente hablando de él o forzándonos a "pasar página" o incluso ni siquiera podemos recordarlo, pero automáticamente nos genera una sensación de malestar y el cuerpo sigue reaccionando con miedo. Nuestro enfoque no se basa solo en conversar, sino en activar el mecanismo natural de curación de tu propio cerebro. Esta es una terapia especializada en el procesamiento de traumas derivados de abuso, pérdidas y situaciones de gran impacto emocional. No borramos tus recuerdos, sino que te ayudamos a entenderlos y te facilitamos las herramientas necesarias para que puedas liberarte de su carga emocional, dejen de controlar tu vida y puedas volver a sentir calma y seguridad.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Sucesos de Alto Impacto</p>
+        <p><strong>El cuerpo recuerda:</strong> Ataques de pánico, fobias, hipervigilancia o dolores físicos inexplicables con origen en memorias no procesadas.</p>
+        <p><strong>Recuperar el control:</strong> Ayudamos a tu sistema nervioso a salir del estado de alerta constante.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Traumas Relacionales y de Apego</p>
+        <p><strong>Heridas tempranas:</strong> Negligencia emocional, abandono, dinámicas familiares disfuncionales o pérdidas significativas en la infancia.</p>
+        <p><strong>Reviviscencias:</strong> Flashbacks o pesadillas que irrumpen en el presente.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Abuso y Violencia</p>
+        <p><strong>Abuso sexual o maltrato:</strong> Procesamiento seguro de experiencias de alto impacto con técnicas EMDR certificadas.</p>
+        <p><strong>Violencia de género:</strong> Acompañamiento especializado en el proceso de recuperación.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Duelo Traumático</p>
+        <p><strong>Pérdidas repentinas:</strong> Muertes inesperadas, accidentes o diagnósticos graves que generan un duelo complicado.</p>
+        <p><strong>Duelo no resuelto:</strong> Bloqueos emocionales que impiden transitar el dolor de forma natural.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 5: Psicoterapia con Menores -->
+  <div class="svc-panel" id="svc5">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>Psicoterapia con menores</em></h3>
+      <p class="svc-intro">Esencia ofrece un espacio adaptado y seguro donde los más jóvenes encuentran su propio lenguaje para expresar lo que les duele, les asusta o les bloquea. A menudo el malestar no se manifiesta con palabras, sino a través del comportamiento, el rendimiento escolar o el aislamiento. En Esencia, ofrecemos una intervención especializada para niños y adolescentes con crisis de identidad, adicciones, conductas suicidas o dificultades escolares. No forzamos sus tiempos ni minimizamos su mundo: los acompañamos a entender sus vivencias y les brindamos las herramientas para liberarse del malestar.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Problemas de Conducta y Gestión Emocional</p>
+        <p><strong>Expresar el malestar:</strong> Abordamos explosiones de rabia, agresividad, baja tolerancia a la frustración o conductas desafiantes en el entorno familiar o escolar.</p>
+        <p><strong>Canalizar la emoción:</strong> Les enseñamos a identificar lo que sienten (miedo, celos, tristeza) y a expresarlo de una forma sana que no les dañe ni dañe a los demás.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Ansiedad, Autoestima y Ánimo Bajo</p>
+        <p><strong>Sufrimiento silencioso:</strong> Intervención en sintomatología depresiva, miedos irracionales, inseguridades profundas, timidez extrema o somatizaciones físicas (dolores de tripa o cabeza sin causa médica).</p>
+        <p><strong>Fortalecer la base:</strong> Trabajamos para devolverles la confianza en sí mismos, reforzando su autoconcepto y aportándoles seguridad en sus capacidades.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Dificultades Escolares y de Relación</p>
+        <p><strong>Desafíos en su entorno:</strong> Apoyo ante problemas de rendimiento académico, desmotivación, acoso escolar (bullying) o dificultades para integrarse y hacer amigos.</p>
+        <p><strong>Habilidades sociales:</strong> Les dotamos de recursos para resolver conflictos, comunicarse de forma asertiva y gestionar la presión de su grupo de iguales.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Crisis de Identidad y Etapas de Transición</p>
+        <p><strong>Construir el "yo":</strong> Acompañamiento en la adolescencia ante crisis de identidad, desorientación vital, primeros consumos o adicciones a pantallas y tecnologías.</p>
+        <p><strong>Identidad:</strong> Apoyo y acompañamiento terapéutico en procesos de transición, exploración de la identidad y cambio de género, facilitando la autoaceptación y la gestión emocional.</p>
+        <p><strong>Transitar el cambio:</strong> Ofrecemos un espacio de guía neutral donde puedan clarificar quiénes son y qué necesitan, reduciendo la distancia y el conflicto con la familia.</p>
+      </div>
+    </div>
+    <p class="svc-areas-title"><em>Nuestro enfoque: El juego como puente, la familia como equipo</em></p>
+    <div class="svc-process svc-process--4">
+      <div class="svc-process-step"><span class="svc-step-num">01</span><h4>Crear el vínculo</h4><p>Dedicamos las primeras sesiones a que el niño o adolescente se sienta cómodo, escuchado y seguro. Construimos una relación de confianza donde sabe que no va a ser juzgado ni examinado, sino comprendido.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">02</span><h4>Comprender el síntoma</h4><p>A través del juego, el dibujo o la palabra, desciframos qué nos está queriendo decir su conducta. Buscamos la raíz de su malestar (un miedo no resuelto, una mudanza, una dificultad escolar).</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">03</span><h4>Desarrollar herramientas</h4><p>Trabajamos de forma práctica y adaptada a su edad para que adquiera estrategias de autorregulación emocional, resolución de problemas y pautas para afrontar aquello que le genera ansiedad.</p></div>
+      <div class="svc-process-step"><span class="svc-step-num">04</span><h4>Consolidar el bienestar</h4><p>Evaluamos los avances en estrecha comunicación con la familia (y el colegio si es necesario). El menor integra lo aprendido, recupera la alegría y la estabilidad propias de su etapa vital y se siente preparado para avanzar de forma autónoma.</p></div>
+    </div>
+  </div>
+
+  <!-- PANEL 6: Proceso de Duelo -->
+  <div class="svc-panel" id="svc6">
+    <div class="svc-header">
+      <h3 class="svc-title"><em>Proceso de Duelo</em></h3>
+      <p class="svc-intro">Acompañamiento especializado en procesos de duelo, pérdidas significativas y duelos complicados. Un espacio para sanar y encontrar nuevos significados. Porque perder a alguien o algo que amamos es una de las experiencias más profundas que podemos atravesar, y hacerlo acompañados marca la diferencia.</p>
+    </div>
+    <p class="svc-areas-title"><em>Posibles áreas de intervención</em></p>
+    <div class="svc-areas">
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Duelo por Pérdida de un Ser Querido</p>
+        <p>Acompañamiento en la muerte de un familiar, pareja o amigo. Ayudamos a transitar el dolor, la negación, la rabia o la culpa de forma sana.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Duelo Complicado o Bloqueado</p>
+        <p>Cuando el duelo se cronifica o se queda atascado. Intervención especializada para desbloquear el proceso y permitir la integración de la pérdida.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Pérdidas No Reconocidas</p>
+        <p>Duelo por aborto, pérdida gestacional, diagnóstico grave, ruptura amorosa o pérdida de la salud. Espacios para validar el dolor invisible.</p>
+      </div>
+      <div class="svc-area-card">
+        <p class="svc-area-heading">Encontrar Nuevos Significados</p>
+        <p>Trabajamos para que la pérdida no defina el futuro, sino que forme parte de la historia vital de forma integrada, permitiendo retomar la vida con propósito.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
